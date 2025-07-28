@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tailwind-like Utility Generator</title>
+    <link rel="stylesheet" href="/src/css/core.css" />
+  </head>
+  <body>
+    <div class="demo-container">
+      <h1>Tailwind-like Utility Generator</h1>
+      <p>
+        This system processes <code>data-tw-*</code> attributes and generates
+        utility classes.
+      </p>
+
+      <div class="demo-box">
+        <h3>Demo Elements with Auto-Generated Utilities</h3>
+        <div
+          class=""
+          data-tw-bg="gray-500 md:blue-500 dark:green-500"
+          data-tw-color="green-100"
+          data-tw-height="10 md:16 lg:18"
+          data-tw-width="10 md:18 lg:24"
+          data-tw-padding="4 hover:6"
+          data-tw-margin="2 dark:4"
+        >
+          Sample div with multiple data-tw attributes
+        </div>
+
+        <div
+          class=""
+          data-tw-bg="blue-500"
+          data-tw-color="white"
+          data-tw-padding="8"
+          data-tw-rounded="4 hover:8"
+          data-tw-display="block"
+        >
+          Another demo element
+        </div>
+
+        <div
+          class=""
+          data-tw-w="full"
+          data-tw-h="20"
+          data-tw-bg="gray-100 hover:gray-500"
+          data-tw-text-align="center"
+          data-tw-display="flex"
+          data-tw-align-items="center"
+          data-tw-justify-content="center"
+        >
+          Full width centered element
+        </div>
+      </div>
+    </div>
+
+    <script src="src/js/twaaca.js"></script>
+  </body>
+</html>
